@@ -12,8 +12,8 @@
 + ReactJS ⚛️
 + Vite 🚀
 + Styled-components 💅
-
-### How to use
+ 
+### How to use 
  
 - git clone https://github.com/12Gustavo21/LaPizza.git or download the zip
 - npm install or yarn install
