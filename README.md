@@ -6,14 +6,14 @@
 >Look the design: https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO
 
 <img width ='800px' src ='./src/assets/img/homePrint.webp' />
-
+ 
 *Technologies*
 
-+ ReactJS ⚛️
++ ReactJS ⚛️ 
 + Vite 🚀
-+ Styled-components 💅
++ Styled-components 💅 
  
-### How to use 
+### How to use
  
 - git clone https://github.com/12Gustavo21/LaPizza.git or download the zip
 - npm install or yarn install
