@@ -38,16 +38,17 @@ export default function Index() {
         <S.MoreSlaesTitle>
           <h2>Mais vendidas</h2>
         </S.MoreSlaesTitle>
-        <div>
+        <S.CardsContainer>
           {pizzas.map((pizza, i) => (
             <Card
               key={i}
+              id={i}
               img={pizza.img}
               name={pizza.name}
               price={pizza.price}
             />
           ))}
-        </div>
+        </S.CardsContainer>
       </S.MoreSalesWrapper>
     </>
   )
