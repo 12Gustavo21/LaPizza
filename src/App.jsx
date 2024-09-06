@@ -5,7 +5,8 @@ import { GlobalStyle } from "./assets/global/style";
 import { lazy, Suspense } from "react";
 
 // components
-const Hero = lazy(() => import("./assets/components/hero"));
+import Hero from "./assets/components/hero";
+import About from "./assets/components/about";
 const MoreSales = lazy(() => import("./assets/components/moreSales"));
 
 export default function App() {
@@ -13,9 +14,12 @@ export default function App() {
     <>
       <GlobalStyle />
       <Hero />
-      <Suspense fallback={<div>Loading...</div>}>
-        <MoreSales />
-      </Suspense>
+      <main>
+        <Suspense fallback={<div>Loading...</div>}>
+          <MoreSales />
+        </Suspense>
+        <About />
+      </main>
     </>
   )
 }
