@@ -7,6 +7,7 @@ import { lazy, Suspense } from "react";
 // components
 import Hero from "./assets/components/hero";
 import About from "./assets/components/about";
+import Loader from "./assets/components/loading";
 const MoreSales = lazy(() => import("./assets/components/moreSales"));
 
 export default function App() {
@@ -15,7 +16,7 @@ export default function App() {
       <GlobalStyle />
       <Hero />
       <main>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           <MoreSales />
         </Suspense>
         <About />
