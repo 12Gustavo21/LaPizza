@@ -6,15 +6,26 @@ export const AboutWrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #FEFBF4;
+
+  @media only screen and (width <= 1000px) {
+    height: auto;
+  }
 `;
 
 export const Container = styled.div`
   width: 80%;
-  height: auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
+
+  @media only screen and (width <= 1000px) {
+    width: 95%;
+    flex-direction: column; 
+    gap: 3rem;
+  }
 `;
 
 export const Landscape = styled.figure`
@@ -27,11 +38,15 @@ export const Landscape = styled.figure`
     object-fit: cover;
     border-radius: 0.5rem;
   }
+
+  @media only screen and (width <= 1000px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.div`
   width: 100%;
-  height: 35vh;
+  height: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -48,9 +63,10 @@ export const Content = styled.div`
   }
 
   button {
-    padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+    width: 12rem;
+    height: 2.5rem;
     border-radius: 1.5rem;
-    border: none; 
+    border: none;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -71,6 +87,7 @@ export const Content = styled.div`
     border-radius: 10rem;
     z-index: -2;
   }
+
   button:before {
     content: "";
     position: absolute;
@@ -83,7 +100,13 @@ export const Content = styled.div`
     border-radius: 10rem;
     z-index: -1;
   }
+
   button:hover:before {
     width: 100%;
+  }
+
+  @media only screen and (width <= 1000px) {
+    gap: 2rem;
+    padding-bottom: 3rem; 
   }
 `;
