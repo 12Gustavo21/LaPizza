@@ -1,11 +1,11 @@
 # La Pizza
 
-> Status : Unfinished project 🕰️ / Open PR
+> Status : Finished project ✅ / Open PR
 
 ## Challenge [08] CodeLab - Iuri Silva
 >Look the design: https://www.figma.com/design/Yb9IBH56g7T1hdIyZ3BMNO
 
-<img width ='800px' src ='./src/assets/img/homePrint.webp' />
+<img width ='800px' src ='./src/assets/img/home-print.png' />
  
 *Technologies*
 
